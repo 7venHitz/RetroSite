@@ -54,7 +54,7 @@ body {
     height: 100vh;
     z-index: -1; /* Push canvas behind content */
     pointer-events: none; /* Let clicks go through */
-    background: black; /* Optional fallback */
+    background: rgb(67, 247, 211); /* Optional fallback */
   }
   
   body {
