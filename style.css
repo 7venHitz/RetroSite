@@ -1,3 +1,12 @@
+.container, main, body {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
 body {
     background-color: #f0f8ff;
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -41,8 +50,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
-    pointer-events: none;
-    background: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Push canvas behind content */
+    pointer-events: none; /* Let clicks go through */
+    background: black; /* Optional fallback */
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background: transparent; /* In case you used background color before */
   }
   
