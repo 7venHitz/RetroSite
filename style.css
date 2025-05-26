@@ -11,6 +11,11 @@ body {
     border: 5px double #ff69b4;
     background-color: #ffffff;
     padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: semi-transparent background */
+    border-radius: 10px;
+    
   }
   
   .nav {
@@ -30,5 +35,14 @@ body {
     font-size: 12px;
     margin-top: 20px;
     color: gray;
+  }
+  
+  #matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: black;
   }
   
